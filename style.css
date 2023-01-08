@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+    color: white;
+
+}
+
+img{
+    padding-left: 230px;
+    padding-right: 200px;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:70%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+    margin: auto;
+    display: block;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.clock {
+    font-family: 'InkLipquid';
+    font-size: 30px;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    height: 50px;
+    font-size: 30px;
+}
+
+#greeting{
+    font-size: 80px;
+}
+
+#left{
+    width:600px;
+    float:left;
+    padding-left: 200px;
+    padding-top: 0px;
+    font-family: '양진체';
+}
+
+#right{
+    width:400px;
+    float:left;
+    padding-left: 300px;
+    padding-top: 0px;
+    font-family: '양진체';
+}
+
+#weather{
+    top: 0px;
+    position: absolute;
+    font-size: 19px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'InkLipquid';
+}
+
+#quote{
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    font-size: 19px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: 'InkLipquid';
+}
+
+/* input 꾸미기 출처 : https://maylee-daily.tistory.com/19 */
+input {
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    border-bottom: 3px white solid;
+    background-color:transparent; 
+    text-align: center;
+    color: aliceblue;
+
+}
+
+input:focus{
+    outline: none;   /* 아웃라인 지우기 */
+    color: white 
+}
+
+input::placeholder {
+    color:rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+ }
+
+input::-webkit-input-placeholder {color:rgb(255, 255, 255);}
+
+/* 버튼 출처 : https://hongku.tistory.com/300 */
+button{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left:10px;
+    border: 1px solid gray;
+    background-color: rgba(0,0,0,0);
+    color: gray;
+    padding: 5px;
+}
+
+button:hover{
+    color:white;
+    background-color: gray;
+}
+
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
